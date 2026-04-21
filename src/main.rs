@@ -12,6 +12,8 @@ fn main() {
         let mut d = rl.begin_drawing(&thread);
 
         d.clear_background(Color::WHITE);
-        d.draw_text("Hello, world!", 12, 12, 20, Color::BLACK);
+        d.draw_fps(0, 20);
+        d.draw_circle(640/2, 480/2, 50.0, Color::RED);
+        d.draw_text("Pendulum simulator", 0, 0, 20, Color::BLACK);
     }
 }
